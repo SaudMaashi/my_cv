@@ -15,7 +15,7 @@ class MainScreenBody extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 70,
-              backgroundColor: Colors.white,
+              backgroundColor: Color(0xFF1C1C1C),
               backgroundImage: AssetImage("assets/images/moon.jpeg"),
             ),
             SizedBox(
@@ -23,7 +23,7 @@ class MainScreenBody extends StatelessWidget {
             ),
             Text(
               "Saud Maashi",
-              style: TextStyle(fontSize: 32, fontWeight: FontWeight.w400),
+              style: TextStyle(fontSize: 32, fontWeight: FontWeight.w500),
             ),
             SizedBox(
               height: 100,
@@ -32,22 +32,28 @@ class MainScreenBody extends StatelessWidget {
               children: [
                 Text(
                   "About Me",
-                  style: TextStyle(fontSize: 24),
+                  style: TextStyle(
+                    color: Colors.amber,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ],
             ),
             SizedBox(
               height: 12,
             ),
-            Row(
-              children: [
-                Text(
-                  "A software engineering student at King Fahd\nUniversity of Petroleum and Minerals who is\ninterested in building mobile applications using\nDart and Flutter.",
-                  style: TextStyle(
-                    fontSize: 14.5,
+            Padding(
+              padding: EdgeInsets.only(right: 48),
+              child: Row(
+                children: [
+                  Text(
+                    "A software engineering student at King\nFahd University of Petroleum and Minerals\nwho is interested in building mobile\napplications using Dart and Flutter.",
+                    style:
+                        TextStyle(fontSize: 15.9, fontWeight: FontWeight.bold),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),
