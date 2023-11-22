@@ -7,28 +7,37 @@ class MainScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       child: Padding(
-        padding: EdgeInsets.only(top: 48, left: 48),
+        padding: const EdgeInsets.only(top: 48, left: 48),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CircleAvatar(
-              radius: 70,
-              backgroundColor: Color(0xFF1C1C1C),
-              backgroundImage: AssetImage("assets/images/moon.jpeg"),
+            Container(
+              height: 150,
+              width: 150,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.white,
+                  width: 2,
+                ),
+              ),
+              child: Image.asset(
+                "assets/images/moon.jpeg",
+                fit: BoxFit.cover,
+              ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 24,
             ),
-            Text(
+            const Text(
               "Saud Maashi",
               style: TextStyle(fontSize: 32, fontWeight: FontWeight.w500),
             ),
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
-            Row(
+            const Row(
               children: [
                 Text(
                   "About Me",
@@ -40,10 +49,10 @@ class MainScreenBody extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(right: 48),
               child: Row(
                 children: [

@@ -12,20 +12,8 @@ class DrawerListView extends StatelessWidget {
     return ListView(
       children: [
         const UserAccountsDrawerHeader(
-          accountName: Text(
-            "Welcome to my Profile!",
-            style: TextStyle(
-              fontWeight: FontWeight.w500,
-              color: Colors.black87,
-            ),
-          ),
-          accountEmail: Text(
-            "I hope you enjoy this simple project!",
-            style: TextStyle(
-              fontWeight: FontWeight.w500,
-              color: Colors.black87,
-            ),
-          ),
+          accountName: null,
+          accountEmail: null,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage("assets/images/moon.jpeg"),
