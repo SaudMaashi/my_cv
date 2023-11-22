@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_cv/widgets/drawer_list_view.dart';
 
 class DrawerSideMenu extends StatelessWidget {
   const DrawerSideMenu({super.key});
@@ -6,33 +7,8 @@ class DrawerSideMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Colors.black87,
-      child: ListView(
-        children: const [
-          UserAccountsDrawerHeader(
-            accountName: Text(
-              "Welcome to my Profile!",
-              style: TextStyle(
-                fontWeight: FontWeight.w500,
-                color: Colors.black87,
-              ),
-            ),
-            accountEmail: Text(
-              "Please select a section:",
-              style: TextStyle(
-                fontWeight: FontWeight.w500,
-                color: Colors.black87,
-              ),
-            ),
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/moon.jpeg"),
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
-        ],
-      ),
+      backgroundColor: Colors.black.withOpacity(0.9),
+      child: const DrawerListView(),
     );
   }
 }
