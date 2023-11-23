@@ -5,4 +5,32 @@ const certificates = [
       course: "Python Data Structures",
       source: "Udemy",
       sourceImage: "assets/images/udemy.png"),
+  Certificate(
+      course: "Python Data Structures",
+      source: "Udemy",
+      sourceImage: "assets/images/udemy.png"),
+  Certificate(
+      course: "Python Data Structures",
+      source: "Udemy",
+      sourceImage: "assets/images/udemy.png"),
+  Certificate(
+      course: "Python Data Structures",
+      source: "Udemy",
+      sourceImage: "assets/images/udemy.png"),
+  Certificate(
+      course: "Python Data Structures",
+      source: "Udemy",
+      sourceImage: "assets/images/udemy.png"),
+  Certificate(
+      course: "Python Data Structures",
+      source: "Udemy",
+      sourceImage: "assets/images/udemy.png"),
+  Certificate(
+      course: "Python Data Structures",
+      source: "Udemy",
+      sourceImage: "assets/images/udemy.png"),
+  Certificate(
+      course: "Python Data Structures",
+      source: "Udemy",
+      sourceImage: "assets/images/udemy.png"),
 ];
