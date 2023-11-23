@@ -10,47 +10,70 @@ class DrawerListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        const UserAccountsDrawerHeader(
-          accountName: null,
-          accountEmail: null,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/images/moon.jpeg"),
-              fit: BoxFit.cover,
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: ListView(
+        children: [
+          const Padding(
+            padding: EdgeInsets.only(left: 30),
+            child: Text(
+              "Personal",
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.amber,
+              ),
             ),
           ),
-        ),
-        const Padding(
-          padding: EdgeInsets.only(left: 30),
-          child: Text(
-            "Personal",
-            style: TextStyle(
-              fontSize: 24,
-              color: Colors.amber,
+          const Divider(),
+          const PersonalInformationColumn(),
+          const SizedBox(
+            height: 10,
+          ),
+          const Padding(
+            padding: EdgeInsets.only(left: 30),
+            child: Text(
+              "Certificates",
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.amber,
+              ),
             ),
           ),
-        ),
-        const Divider(),
-        const PersonalInformationColumn(),
-        const SizedBox(
-          height: 10,
-        ),
-        const Padding(
-          padding: EdgeInsets.only(left: 30),
-          child: Text(
-            "Certificates",
-            style: TextStyle(
-              fontSize: 24,
-              color: Colors.amber,
+          const Divider(),
+          for (final certificate in certificates)
+            CertificateListTile(certificate: certificate),
+          const Padding(
+            padding: EdgeInsets.only(left: 30, top: 10),
+            child: Text(
+              "Languages",
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.amber,
+              ),
             ),
           ),
-        ),
-        const Divider(),
-        for (final certificate in certificates)
-          CertificateListTile(certificate: certificate),
-      ],
+          const Divider(),
+          const Padding(
+            padding: EdgeInsets.only(left: 30),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Arabic",
+                  style: TextStyle(fontSize: 20),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  "English",
+                  style: TextStyle(fontSize: 20),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

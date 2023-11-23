@@ -18,12 +18,12 @@ class MainScreenBody extends StatelessWidget {
               width: 150,
               decoration: BoxDecoration(
                 border: Border.all(
-                  color: Colors.white,
+                  color: Colors.black12,
                   width: 2,
                 ),
               ),
               child: Image.asset(
-                "assets/images/moon.jpeg",
+                "assets/images/picture.jpg",
                 fit: BoxFit.cover,
               ),
             ),
