@@ -16,6 +16,7 @@ class MainScreen extends StatelessWidget {
 
   AppBar buildAppBar() {
     return AppBar(
+      backgroundColor: Colors.transparent,
       centerTitle: true,
       title: const Text(
         "For more information",
@@ -23,7 +24,6 @@ class MainScreen extends StatelessWidget {
           fontWeight: FontWeight.bold,
         ),
       ),
-      backgroundColor: Colors.transparent,
     );
   }
 }
