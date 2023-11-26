@@ -23,7 +23,7 @@ class MainScreenBody extends StatelessWidget {
                 ),
               ),
               child: Image.asset(
-                "assets/images/picture.jpg",
+                "assets/images/picture.jpeg",
                 fit: BoxFit.cover,
               ),
             ),
