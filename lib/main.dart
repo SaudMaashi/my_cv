@@ -11,7 +11,7 @@ class MyCV extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark(useMaterial3: true),
+      theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       home: const MainScreen(),
     );
